@@ -7,6 +7,7 @@
     text-decoration: none;
     font-family: 'Alegreya Sans', Verdana, sans-serif;
     color: unset;
+    scroll-behavior: smooth;
 }
 a:hover {
     text-decoration: underline;
@@ -32,7 +33,7 @@ body {
     width: 100%;
     color: #f8fafc;
 }
-nav {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,14 +46,14 @@ nav {
     padding: 0 5%;
     backdrop-filter: blur(10px);
 }
-nav ul {
+header ul {
     display: flex;
     font-size: 1.2em;
 }
-nav ul > * + * {
+header ul > * + * {
   margin-left: 3em;
 }
-nav li a:hover {
+header li a:hover {
     text-decoration: underline;
     text-decoration-style: dotted;
     text-underline-offset: 4px;
@@ -154,7 +155,8 @@ main {
 }
 #contact {
     display: flex;
-    width: 100%;
+    width: 85%;
+    height: 100vh;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
@@ -435,7 +437,7 @@ footer {
     }
 }
 @media (max-width:600px) {
-    nav ul {
+    header ul {
         display: none;
     }
     button {
