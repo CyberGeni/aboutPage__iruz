@@ -153,6 +153,14 @@ main {
     text-decoration: underline;
     text-decoration-style: dotted;
 }
+.contact {
+    width: 100%;
+}
+.contact button {
+    margin: auto;
+    display: flex;
+    color: #021e55;
+}
 #contact {
     display: flex;
     width: 85%;
